@@ -1,6 +1,6 @@
 <?php
 // framework/index.php
-$name = $_GET['name'];
+$name = isset($_GET['name']) ? $_GET['name'] : 'World';
 
 printf('Hello %s', $name);
 ?>
